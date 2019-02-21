@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', ['as' => 'route@index', 'uses' =>'FrontEnd\IndexController@index']);
+Route::get('/ss', function (){
+
 });
+//Route::group(['prefix' => ])
